@@ -10,9 +10,9 @@ from mlflow.server import _run_server
 from mlflow.server.handlers import initialize_backend_stores
 from mlflow.utils.process import ShellCommandException
 
-DEFAULT_HOST = "20.31.209.2"
-DEFAULT_PORT = 5000
-WORKERS = 1
+DEFAULT_HOST = os.environ["MLFLOW_SERVER_HOST"]
+WORKERS = os.environ["MLFLOW_SERVER_WORKER"]
+DEFAULT_PORT = os.environ["MLFLOW_SERVER_PORT"]
 
 
 def configure_logger() -> logging.Logger:

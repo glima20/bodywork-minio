@@ -13,6 +13,11 @@ stages:
       MLFLOW_S3_ENDPOINT_URL: mlflow-config
       MLFLOW_BACKEND_STORE_URI: mlflow-config
       MLFLOW_DEFAULT_ARTIFACT_ROOT: mlflow-config
+
+      MLFLOW_SERVER_HOST: mlflow-config
+      MLFLOW_SERVER_WORKER: mlflow-config
+      MLFLOW_SERVER_PORT: mlflow-config
+
       AWS_ACCESS_KEY_ID: aws-credentials
       AWS_SECRET_ACCESS_KEY: aws-credentials
       AWS_DEFAULT_REGION: aws-credentials
