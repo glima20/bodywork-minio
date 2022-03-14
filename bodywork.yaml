@@ -10,11 +10,11 @@ stages:
       - mlflow[extras]==1.16.0
       - psycopg2-binary==2.8.6
     secrets:
-      MLFLOW_BACKEND_STORE_URI: "http://20.86.213.228:80"
-      MLFLOW_DEFAULT_ARTIFACT_ROOT: "mlflow_artefacts"
-      AWS_ACCESS_KEY_ID: "ExCQEPIepyEosUKJ"
-      AWS_SECRET_ACCESS_KEY: "rpk4l2tNH367LhjsP2ubWdKWpmwGHqPd"
-      AWS_DEFAULT_REGION: "eu-south-1"
+      MLFLOW_BACKEND_STORE_URI: ""
+      MLFLOW_DEFAULT_ARTIFACT_ROOT: ""
+      AWS_ACCESS_KEY_ID: ""
+      AWS_SECRET_ACCESS_KEY: ""
+      AWS_DEFAULT_REGION: ""
     cpu_request: 0.1
     memory_request_mb: 250
     service:
