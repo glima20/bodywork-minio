@@ -39,14 +39,19 @@ def start_mlflow_server(backend_store_uri: str, default_artifact_root: str) -> N
     except Exception as e:
         log.error(f"Error initializing backend store - {e}")
         sys.exit(1)
-
+    """
+    file_store_path,
+    default_artifact_root,
+    host,
+    port,
+    """
     try:
         _run_server(
             backend_store_uri,
             default_artifact_root,
             DEFAULT_HOST,
             DEFAULT_PORT,
-            workers=WORKERS,
+            # workers=WORKERS,
         )
     except ShellCommandException as e:
         log.error(f"Running the mlflow server failed - {e}")
